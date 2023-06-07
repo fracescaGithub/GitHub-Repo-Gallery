@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Repo Gallery</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome icons -->
+    <script
+      src="https://kit.fontawesome.com/1ca15d6fa7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="github.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- Header -->
+      <header id="header">
+        <h1><i class="fab fa-github-alt"></i>GitHub Repo Gallery</h1>
+        <section class="intro">
+          <div class="overview"></div>
+        </section>
+      </header>
+
+      <section class="repos-container">
+        <!-- Search input -->
+        <div class="searchDiv">
+          <input
+            type="text"
+            class="search-field hide"
+            placeholder="Search by name"
+          />
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </div>
+        <!-- Repositories list -->
+        <div class="repo-list"></div>
+      </section>
+
+      <!-- Repo Info Modal -->
+      <div id="repo-info-modal" class="modal"></div>
+    </main>
+  </body>
+</html>
